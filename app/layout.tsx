@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "./color.css";
+import { Box, Theme, ThemePanel } from "@radix-ui/themes";
+import { ThemeProvider } from "@/component/theme";
+// import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +19,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Theme accentColor="iris">
+            <Box className="absolute top-0 -z-10 h-full w-full">
+              <Box className="absolute bottom-auto left-auto bg-[--iris-5] right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full dark:bg-[--iris-6] opacity-50 blur-[80px]"></Box>
+            </Box>
+            {children}
+            <ThemePanel />
+          </Theme>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

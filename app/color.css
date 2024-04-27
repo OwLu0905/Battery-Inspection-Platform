@@ -1,0 +1,147 @@
+@import "@radix-ui/colors/iris.css";
+@import "@radix-ui/colors/red.css";
+:root,
+.light,
+.light-theme {
+  --iris-1: #fdfcfe;
+  --iris-2: #faf8fd;
+  --iris-3: #f4effc;
+  --iris-4: #ede4f9;
+  --iris-5: #e5d8f5;
+  --iris-6: #d9c9ee;
+  --iris-7: #cab4e4;
+  --iris-8: #b69ad8;
+  --iris-9: #8258ad;
+  --iris-10: #744b9d;
+  --iris-11: #7951a3;
+  --iris-12: #3d2654;
+
+  --iris-a1: #5500aa03;
+  --iris-a2: #4900b707;
+  --iris-a3: #5000d010;
+  --iris-a4: #5500c71b;
+  --iris-a5: #5500be27;
+  --iris-a6: #4c00af36;
+  --iris-a7: #4b01a44b;
+  --iris-a8: #47009d65;
+  --iris-a9: #400082a7;
+  --iris-a10: #3a0074b4;
+  --iris-a11: #3b0078ae;
+  --iris-a12: #1b0036d9;
+
+  --iris-contrast: #fff;
+  --iris-surface: #f9f6fdcc;
+  --iris-indicator: #8258ad;
+  --iris-track: #8258ad;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root,
+    .light,
+    .light-theme {
+      --iris-1: oklch(99.3% 0.003 305.2);
+      --iris-2: oklch(98.2% 0.007 305.2);
+      --iris-3: oklch(96% 0.018 305.2);
+      --iris-4: oklch(93.3% 0.03 305.2);
+      --iris-5: oklch(90.1% 0.041 305.2);
+      --iris-6: oklch(86% 0.054 305.2);
+      --iris-7: oklch(80.4% 0.07 305.2);
+      --iris-8: oklch(73.2% 0.093 305.2);
+      --iris-9: oklch(54.2% 0.134 305.2);
+      --iris-10: oklch(49.6% 0.131 305.2);
+      --iris-11: oklch(51.5% 0.131 305.2);
+      --iris-12: oklch(32.1% 0.082 305.2);
+
+      --iris-a1: color(display-p3 0.349 0.024 0.675 / 0.012);
+      --iris-a2: color(display-p3 0.302 0.024 0.722 / 0.028);
+      --iris-a3: color(display-p3 0.255 0.008 0.753 / 0.063);
+      --iris-a4: color(display-p3 0.263 0.004 0.706 / 0.106);
+      --iris-a5: color(display-p3 0.282 0.004 0.694 / 0.153);
+      --iris-a6: color(display-p3 0.227 0.004 0.624 / 0.208);
+      --iris-a7: color(display-p3 0.235 0.004 0.596 / 0.291);
+      --iris-a8: color(display-p3 0.224 0.004 0.573 / 0.393);
+      --iris-a9: color(display-p3 0.208 0 0.475 / 0.648);
+      --iris-a10: color(display-p3 0.184 0 0.424 / 0.699);
+      --iris-a11: color(display-p3 0.188 0 0.435 / 0.675);
+      --iris-a12: color(display-p3 0.086 0 0.196 / 0.848);
+
+      --iris-contrast: #fff;
+      --iris-surface: color(display-p3 0.976 0.965 0.992 / 0.8);
+      --iris-indicator: oklch(54.2% 0.134 305.2);
+      --iris-track: oklch(54.2% 0.134 305.2);
+    }
+  }
+}
+
+.dark,
+.dark-theme {
+  --iris-1: #130f19;
+  --iris-2: #1a1523;
+  --iris-3: #2b1f3d;
+  --iris-4: #372551;
+  --iris-5: #412e5e;
+  --iris-6: #4d386c;
+  --iris-7: #5d4681;
+  --iris-8: #7659a2;
+  --iris-9: #73569f;
+  --iris-10: #634c87;
+  --iris-11: #c4a6f6;
+  --iris-12: #e6dcf9;
+
+  --iris-a1: #4a00f409;
+  --iris-a2: #8444f714;
+  --iris-a3: #9c5cfb30;
+  --iris-a4: #9e5bfe45;
+  --iris-a5: #a56bfe53;
+  --iris-a6: #ae77fe62;
+  --iris-a7: #b382ff78;
+  --iris-a8: #b686fe9c;
+  --iris-a9: #b484fe99;
+  --iris-a10: #b587fd7f;
+  --iris-a11: #caabfef6;
+  --iris-a12: #ece1fff9;
+
+  --iris-contrast: #fff;
+  --iris-surface: #23193580;
+  --iris-indicator: #73569f;
+  --iris-track: #73569f;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .dark,
+    .dark-theme {
+      --iris-1: oklch(17.8% 0.022 300.8);
+      --iris-2: oklch(21% 0.028 300.8);
+      --iris-3: oklch(26.8% 0.057 300.8);
+      --iris-4: oklch(31% 0.079 300.8);
+      --iris-5: oklch(34.7% 0.084 300.8);
+      --iris-6: oklch(38.9% 0.088 300.8);
+      --iris-7: oklch(44.6% 0.097 300.8);
+      --iris-8: oklch(52.5% 0.115 300.8);
+      --iris-9: oklch(51.5% 0.115 300.8);
+      --iris-10: oklch(46.7% 0.097 300.8);
+      --iris-11: oklch(78.1% 0.115 300.8);
+      --iris-12: oklch(91.1% 0.041 300.8);
+
+      --iris-a1: color(display-p3 0.2 0 0.984 / 0.03);
+      --iris-a2: color(display-p3 0.506 0.286 0.996 / 0.072);
+      --iris-a3: color(display-p3 0.6 0.38 1 / 0.177);
+      --iris-a4: color(display-p3 0.6 0.388 0.996 / 0.257);
+      --iris-a5: color(display-p3 0.635 0.447 1 / 0.311);
+      --iris-a6: color(display-p3 0.671 0.49 1 / 0.37);
+      --iris-a7: color(display-p3 0.69 0.533 1 / 0.454);
+      --iris-a8: color(display-p3 0.714 0.553 1 / 0.589);
+      --iris-a9: color(display-p3 0.71 0.545 1 / 0.576);
+      --iris-a10: color(display-p3 0.706 0.561 1 / 0.479);
+      --iris-a11: color(display-p3 0.792 0.69 1 / 0.942);
+      --iris-a12: color(display-p3 0.922 0.886 0.996 / 0.967);
+
+      --iris-contrast: #fff;
+      --iris-surface: color(display-p3 0.133 0.094 0.196 / 0.5);
+      --iris-indicator: oklch(51.5% 0.115 300.8);
+      --iris-track: oklch(51.5% 0.115 300.8);
+    }
+  }
+}
