@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import {
   CopyIcon,
   MagnifyingGlassIcon,
@@ -18,7 +19,6 @@ import {
   Grid,
   IconButton,
   Link,
-  Radio,
   Section,
   SegmentedControl,
   Select,
@@ -30,10 +30,9 @@ import {
   TextField,
 } from "@radix-ui/themes";
 import { useTheme } from "next-themes";
-import React from "react";
 
 export default function Home() {
-  const [value, setValue] = React.useState("light");
+  const [value, _] = React.useState("light");
   const { theme = "light", setTheme } = useTheme();
   const data = {
     light: { label: "light", icon: <SunIcon /> },
