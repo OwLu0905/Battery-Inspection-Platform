@@ -2,14 +2,17 @@
 import React from "react";
 import {
   CopyIcon,
+  InfoCircledIcon,
   MagnifyingGlassIcon,
   MoonIcon,
   SunIcon,
 } from "@radix-ui/react-icons";
 import {
   Badge,
+  Blockquote,
   Box,
   Button,
+  Callout,
   Card,
   Checkbox,
   Code,
@@ -40,8 +43,12 @@ export default function Home() {
   };
   return (
     <main className="">
-      <Container className="pt-32">
-        <Grid columns="3" gap="3">
+      <Container
+        className="pt-32"
+        size={{ initial: "1", sm: "4" }}
+        px={{ initial: "2" }}
+      >
+        <Grid columns={{ initial: "1", xs: "2", sm: "3" }} gap="3">
           <Flex direction="column" gap="4">
             <Text>Hello from Radix Themes :)</Text>
             <Button className="">Let's go</Button>
@@ -157,6 +164,22 @@ export default function Home() {
               </DataList.Item>
             </DataList.Root>
           </Card>
+          <Flex direction="column" gap="4">
+            <Blockquote>
+              Perfect typography is certainly the most elusive of all arts.
+              Sculpture in stone alone comes near it in obstinacy.
+            </Blockquote>
+
+            <Callout.Root>
+              <Callout.Icon>
+                <InfoCircledIcon />
+              </Callout.Icon>
+              <Callout.Text>
+                You will need admin privileges to install and access this
+                application.
+              </Callout.Text>
+            </Callout.Root>
+          </Flex>
         </Grid>
       </Container>
     </main>
