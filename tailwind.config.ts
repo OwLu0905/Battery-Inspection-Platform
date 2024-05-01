@@ -14,6 +14,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      width: {
+        "sidebar-open": "18rem",
+        "sidebar-close": "5rem",
+      },
+      height: {
+        header: "4rem",
+      },
+      margin: {
+        header: "4rem",
+      },
+      padding: {
+        header: "4rem",
+      },
     },
   },
   plugins: [],
