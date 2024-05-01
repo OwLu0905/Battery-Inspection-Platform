@@ -1,4 +1,5 @@
-import { LoginForm } from "@/components/auth/login-form";
+import { SignInButton, SignedIn, UserButton } from "@clerk/nextjs";
+
 import { Blockquote, Box, Container, Flex, Section } from "@radix-ui/themes";
 
 export default function LoginPage() {
@@ -14,8 +15,13 @@ export default function LoginPage() {
             </Blockquote>
           </Box>
           <Box className="grow">
-            <LoginForm />
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
           </Box>
+          <div>
+            <SignInButton mode="modal" />
+          </div>
         </Flex>
       </Container>
     </Section>
