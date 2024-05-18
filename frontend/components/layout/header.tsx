@@ -28,10 +28,10 @@ const Header = () => {
       <nav className="ml-auto mr-10">
         <Flex gap={"6"} align="center">
           <div>
-            <Link href="/material">Inspection</Link>
+            <Link href="/inspect">Inspection</Link>
           </div>
           <div>
-            <Link href="#">History</Link>
+            <Link href="/material">History</Link>
           </div>
           <ClerkLoading>
             <Spinner />
