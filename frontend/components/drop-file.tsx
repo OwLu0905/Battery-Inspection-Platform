@@ -73,7 +73,7 @@ export const DropFile = () => {
             {acceptedFiles.map((i) => {
               return (
                 <Flex key={i.size} align="center" gap="2">
-                  <Text>{i.path}</Text>
+                  <Text>{i.name}</Text>
                   <Cross1Icon color="red" />
                 </Flex>
               );
